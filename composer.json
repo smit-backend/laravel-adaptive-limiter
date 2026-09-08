@@ -1,0 +1,27 @@
+{
+    "name": "smit-backend/laravel-adaptive-limiter",
+    "description": "Smart rate limiting middleware extending Laravel limiter with dynamic IP reputation scoring and abuse throttling.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "smit-backend",
+            "homepage": "https://github.com/smit-backend"
+        }
+    ],
+    "require": {
+        "php": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "SmitBackend\\AdaptiveLimiter\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SmitBackend\\AdaptiveLimiter\\PackageServiceProvider"
+            ]
+        }
+    }
+}
